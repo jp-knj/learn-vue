@@ -19,13 +19,19 @@
                         <p v-if="inventory > 10">In Stock</p>
                         <p v-else-if="inventory <= 10 && inventory > 0">Almost sold out</p>
                         <p v-else>Out of Stock</p>
+                        <a :href="link" target="_blank">link this</a>
                         <ul>
                             <li v-for="detail in details">{{ detail }}</li>
                         </ul>
-                        <ul>
-                            <li v-for="size in sizes">{{ size }}</li>
-                        </ul>
-                        <a :href="link" target="_blank">link this</a>
+                        <div v-for="variant in variants" :key="variant.variantId">
+                            <p @mouseover="updateProduct(variant.variantImage)">{{ variant.variantColor }}</p>
+                        </div>
+                        <button v-on:click="addToCart">Add to cart</button>
+                        <button @click="removeFromCart">Remove from cart</button>
+                        <div class="cart">
+                            <p>Cart({{ cart }})</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
