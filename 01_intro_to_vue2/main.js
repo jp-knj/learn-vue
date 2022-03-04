@@ -8,5 +8,6 @@ var app = new Vue({
         onSale: false,
         inventory: 100,
         details: ['80% cotton', '20% polyester', 'Gender-neutral'],
+        sizes: ['S', 'M', 'L', 'XL', 'XXL', 'XXXL']
     }
 });
