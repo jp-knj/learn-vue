@@ -5,6 +5,9 @@ import store from "./store";
 
 Vue.config.productionTip = false;
 
+// Vue instance
+// sending in my router, store
+// telling vue to render my app
 new Vue({
   router,
   store,
