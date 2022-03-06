@@ -6,9 +6,9 @@ Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
-    path: "/",
-    name: "home",
-    component: HomeView,
+    path: "/",            // url
+    name: "home",         // name of the route
+    component: HomeView,  // which component to render
   },
   {
     path: "/about",
