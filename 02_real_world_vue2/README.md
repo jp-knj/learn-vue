@@ -78,3 +78,20 @@ We place components in both the /components and /views folders. The difference i
     // here is where we design the appearance of our component
     </style>
 ```
+
+## The Library to Make API Calls
+Axios has a whole set of features, with the ability to:
+
+- Do GET, POST, PUT, and DELETE requests 
+- Add authentication to each request 
+- Set timeouts if requests take too long 
+- Configure defaults for every request 
+- Intercept requests to create middleware 
+- Handle errors and cancel requests properly 
+- Properly serialize and deserialize requests & responses
+
+## Call api
+- usually in vue we load in dynamic data by making asynchrous api calls
+- allows us to make api calls
+- make calls to api in components created lifecycle hook
+- keeping axios code in a service file, we can separate concens
