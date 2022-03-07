@@ -25,10 +25,9 @@
 │   └── view　　　　　　　　　　// store files for different pages
 ├── tsconfig.json
 └── vue.config.js
-
-
-
 ```
+
+
 ## Project setup
 ```
 pnpm install
@@ -62,3 +61,20 @@ We are importing these files from the /views directory and in our src/ directory
 
 A: They are components.  
 We place components in both the /components and /views folders. The difference is that when using Vue Router, it’s a best practice to put the components (AKA pages) that get loaded by Vue Router in the /views directory. You then keep the modular (reusable) components in your /components directory.
+```vue
+    <template>
+      <div>
+      // here is where we lay out the structure of our component
+      </div>
+    </template>
+    
+    <script>
+      export default {
+        // here is where we give our component the ability to behave and perform logic
+      }
+    </script>
+    
+    <style scoped>
+    // here is where we design the appearance of our component
+    </style>
+```
